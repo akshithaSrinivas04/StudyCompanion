@@ -1,11 +1,22 @@
-<div align="center">
+# AI Study Companion - Vercel Deployment Guide
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This project is a React + Vite application powered by Firebase and Google Gemini AI.
 
-  <h1>Built with AI Studio</h2>
+## Deployment Steps
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1. **Push to GitHub**: Push your code to a GitHub repository.
+2. **Import to Vercel**: Go to [Vercel](https://vercel.com) and import your repository.
+3. **Configure Environment Variables**: In the Vercel project settings, add the following environment variables:
+   - `GEMINI_API_KEY`: Your Google AI SDK key.
+   - `VITE_FIREBASE_API_KEY`: From your Firebase config.
+   - `VITE_FIREBASE_AUTH_DOMAIN`: From your Firebase config.
+   - `VITE_FIREBASE_PROJECT_ID`: From your Firebase config.
+   - `VITE_FIREBASE_STORAGE_BUCKET`: From your Firebase config.
+   - `VITE_FIREBASE_MESSAGING_SENDER_ID`: From your Firebase config.
+   - `VITE_FIREBASE_APP_ID`: From your Firebase config.
+   - `VITE_FIREBASE_FIRESTORE_DATABASE_ID`: From your Firebase config.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+4. **Deploy**: Click deploy. Vercel will automatically detect the Vite configuration and build the project.
 
-</div>
+## Note on Mobile Deployment
+While Vercel hosts the web application, you can use this as a **Progressive Web App (PWA)** or wrap it in a **WebView** using tools like Capacitor or Cordova to create a native Android/iOS experience.

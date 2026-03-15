@@ -1,0 +1,7 @@
+{
+  "name": "AI Study Companion",
+  "description": "An AI-powered study assistant that helps students summarize notes, generate quizzes, and explain complex concepts using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
